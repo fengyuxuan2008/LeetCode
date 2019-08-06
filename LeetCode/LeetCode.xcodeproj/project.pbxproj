@@ -15,6 +15,7 @@
 		1860081022F9948700C9F1D0 /* LeetCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860080F22F9948700C9F1D0 /* LeetCodeTests.swift */; };
 		1860081B22F9948700C9F1D0 /* LeetCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860081A22F9948700C9F1D0 /* LeetCodeUITests.swift */; };
 		1860082922F994DB00C9F1D0 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860082822F994DB00C9F1D0 /* TwoSum.swift */; };
+		1860082B22F9AF2700C9F1D0 /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860082A22F9AF2700C9F1D0 /* ReverseLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1860081A22F9948700C9F1D0 /* LeetCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeUITests.swift; sourceTree = "<group>"; };
 		1860081C22F9948700C9F1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1860082822F994DB00C9F1D0 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
+		1860082A22F9AF2700C9F1D0 /* ReverseLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				186007FA22F9948000C9F1D0 /* AppDelegate.swift */,
 				186007FC22F9948000C9F1D0 /* ViewController.swift */,
 				1860082822F994DB00C9F1D0 /* TwoSum.swift */,
+				1860082A22F9AF2700C9F1D0 /* ReverseLinkedList.swift */,
 				186007FE22F9948000C9F1D0 /* Main.storyboard */,
 				1860080122F9948600C9F1D0 /* Assets.xcassets */,
 				1860080322F9948600C9F1D0 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186007FD22F9948000C9F1D0 /* ViewController.swift in Sources */,
+				1860082B22F9AF2700C9F1D0 /* ReverseLinkedList.swift in Sources */,
 				186007FB22F9948000C9F1D0 /* AppDelegate.swift in Sources */,
 				1860082922F994DB00C9F1D0 /* TwoSum.swift in Sources */,
 			);
