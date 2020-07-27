@@ -35,3 +35,33 @@ class Solution_21 {
 }
 ///执行用时：20 ms
 ///内存消耗：20.9 MB
+
+///剑指offer-06 从尾到头打印链表
+/**
+* Definition for singly-linked list.
+* public class ListNode {
+*     public var val: Int
+*     public var next: ListNode?
+*     public init(_ val: Int) {
+*         self.val = val
+*         self.next = nil
+*     }
+* }
+*/
+class Solution_offer_06 {
+    func reversePrint(_ head: ListNode?) -> [Int] {
+        var listArr: Array<Int> = []
+        var res: Array<Int> = []
+        var head = head
+        while  head != nil {
+            listArr.append(head!.val)
+            head = head?.next
+        }
+//        listArr = listArr.reversed()
+//        return listArr
+        for i in 0 ..< listArr.count {
+            res.append(listArr[listArr.count - i - 1])
+        }
+        return res
+    }
+}
