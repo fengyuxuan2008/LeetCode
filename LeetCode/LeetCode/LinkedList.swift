@@ -65,3 +65,36 @@ class Solution_offer_06 {
         return res
     }
 }
+
+///删除排序链表中的重复元素
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public var val: Int
+ *     public var next: ListNode?
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.next = nil
+ *     }
+ * }
+ */
+class Solution_83 {
+    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+           let dummy = ListNode(-1)
+            var newHead = head
+            dummy.next = newHead
+            
+            while newHead != nil {
+                if newHead?.val == newHead?.next?.val {
+                    newHead?.next = newHead?.next?.next
+                } else {
+                    newHead = newHead?.next
+                }
+            }
+            
+            return dummy.next
+        
+    }
+}
+/*1.当前节点和下一个节点的值相同，就跳过下一个， 指向下下一个结点
+2.如果值不相同，节点向后移动**/
