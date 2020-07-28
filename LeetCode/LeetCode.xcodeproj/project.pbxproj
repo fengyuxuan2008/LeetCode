@@ -110,12 +110,10 @@
 		186007F922F9948000C9F1D0 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				188D250E24D076FB0073AA9B /* 链表 */,
 				1860083622FC4FF200C9F1D0 /* TwoSum.swift */,
 				1860082A22F9AF2700C9F1D0 /* ReverseLinkedList.swift */,
 				1860082C22FC1E0C00C9F1D0 /*  SwapNodesInPairs.swift */,
-				1860082E22FC3CA600C9F1D0 /* LinkedListCycle.swift */,
-				1860083122FC4B0C00C9F1D0 /* LinkedListCycleTwo.swift */,
-				1801CECE24CEFA5800E8F8F0 /* LinkedList.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -149,6 +147,16 @@
 				186007FC22F9948000C9F1D0 /* ViewController.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		188D250E24D076FB0073AA9B /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				1860082E22FC3CA600C9F1D0 /* LinkedListCycle.swift */,
+				1860083122FC4B0C00C9F1D0 /* LinkedListCycleTwo.swift */,
+				1801CECE24CEFA5800E8F8F0 /* LinkedList.swift */,
+			);
+			path = "链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

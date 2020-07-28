@@ -1,4 +1,4 @@
-//
+//链表相关
 //  LinkedList.swift
 //  LeetCode
 //
@@ -98,3 +98,33 @@ class Solution_83 {
 }
 /*1.当前节点和下一个节点的值相同，就跳过下一个， 指向下下一个结点
 2.如果值不相同，节点向后移动**/
+
+///141 环形链表
+/**
+* Definition for singly-linked list.
+* public class ListNode {
+*     public var val: Int
+*     public var next: ListNode?
+*     public init(_ val: Int) {
+*         self.val = val
+*         self.next = nil
+*     }
+* }
+*/
+class Solution_141 {
+    func hasCycle(_ head: ListNode?) -> Bool {
+        var fast = head
+        var slow = head
+        while fast != nil && slow != nil && fast.next != nil{
+            slow = slow.next
+            fast = fast.next.next
+            if fast.var == slow {
+                return true
+            }else{
+                return false
+            }
+        }
+        
+    }
+}
+//双指针，即快慢指针，空间复杂度O(1)
