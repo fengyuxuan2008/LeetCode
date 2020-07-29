@@ -173,5 +173,30 @@ class Solution_237 {
     }
 }
 
-///求链表的中间结点
-
+///876.求链表的中间结点
+///给定一个带有头结点 head 的非空单链表，返回链表的中间结点。
+///如果有两个中间结点，则返回第二个中间结点。
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public var val: Int
+ *     public var next: ListNode?
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.next = nil
+ *     }
+ * }
+ */
+//快慢指针解决此问题
+//空间复杂度O(1),时间复杂度O(n)
+class Solution_876 {
+    func middleNode(_ head: ListNode?) -> ListNode? {
+        var slow = head
+        var fast = head
+        while fast != nil && fast?.next != nil {
+            slow = slow?.next
+            fast = fast?.next?.next
+        }
+        return slow
+    }
+}
