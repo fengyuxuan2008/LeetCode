@@ -151,3 +151,27 @@ class Solution_206{
             return p
     }
 }
+
+///237.删除链表中的结点
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public var val: Int
+ *     public var next: ListNode?
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.next = nil
+ *     }
+ * }
+ */
+//1.先将该结点后面的值赋值给当前的结点
+//2.然后将该结点的的next指向下下一个结点，也就相当于删除了该结点
+class Solution_237 {
+    func deleteNode(_ node: ListNode?) {
+        node!.val = node!.next!.val
+        node!.next = node!.next!.next
+    }
+}
+
+///求链表的中间结点
+
