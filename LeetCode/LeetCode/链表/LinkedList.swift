@@ -127,3 +127,27 @@ class Solution_141 {
     }
 }
 //双指针，即快慢指针，空间复杂度O(1)
+
+///206.反转链表
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public var val: Int
+ *     public var next: ListNode?
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.next = nil
+ *     }
+ * }
+ */
+class Solution_206{
+    func reverseList(_ head: ListNode?) -> ListNode? {
+      if head == nil || head?.next == nil {
+                return head
+            }
+            let p = reverseList(head?.next)
+            head?.next?.next = head
+            head?.next = nil
+            return p
+    }
+}
