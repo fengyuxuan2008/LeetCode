@@ -200,3 +200,36 @@ class Solution_876 {
         return slow
     }
 }
+
+///160.相交链表
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public var val: Int
+ *     public var next: ListNode?
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.next = nil
+ *     }
+ * }
+ */
+///换个方式消除长度差： 拼接两链表。
+///设长-短链表为 C，短-长链表为 D （分别代表长链表在前和短链表在前的拼接链表），则当 C 走到长短链表交接处时，D 走在长链表中，且与长链表头距离为 长度差;
+///当 ha == hb 时跳出，返回即可
+
+///swift当中判断指针地址是否相等是用 ===，==是判断指向的实例是否相等。
+class Solution_160 {
+    func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
+        if headA == nil || headB == nil {
+                   return nil
+               }
+        var pA: ListNode? = headA
+        var pB: ListNode? = headB
+
+        while pA !== pB {
+            pA = (pA == nil) ? headB : (pA?.next)
+            pB = (pB == nil) ? headA : (pB?.next)
+        }
+        return pA
+    }
+}
