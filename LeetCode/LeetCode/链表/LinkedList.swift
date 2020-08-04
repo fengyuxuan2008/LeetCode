@@ -233,3 +233,30 @@ class Solution_160 {
         return pA
     }
 }
+
+///203. 移除链表元素
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public var val: Int
+ *     public var next: ListNode?
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.next = nil
+ *     }
+ * }
+ */
+//递归
+class Solution_203 {
+    func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
+        if head == nil {
+            return nil
+        }
+        
+        head?.next = removeElements(head?.next, val)
+        if head?.val == val {
+            return head?.next
+        }
+        return head
+    }
+}
